@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background-image: url("/img/bg-01.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.body-shadow {
+  position: absolute;
+  background-color: rgba(132, 106, 221, 0.9);
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+.main-box {
+  width: 60%;
+  height: 75%;
+  background-color: #fff;
+  z-index: 10;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: -12px 0px 13px -12px rgb(66, 68, 90);
+}
+
+.right-box {
+  width: 50%;
+  height: 100%;
+}
+.right-box .mail {
+  background-image: url("/img/img-01.webp");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  transition: transform 1s;
+  cursor: crosshair;
+}
+.right-box .mail:hover {
+  transform: scale(1.2);
+}
+
+.left-box {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: -12px 0px 13px -12px rgb(66, 68, 90);
+}
+.left-box h1 {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.left-box .name {
+  width: 80%;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(226, 226, 226);
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+.left-box .name:focus {
+  border: 2px solid #846add;
+  outline: none;
+}
+.left-box .email:focus {
+  border: 2px solid #846add;
+  outline: none;
+}
+.left-box .message:focus {
+  border: 2px solid #846add;
+  outline: none;
+}
+.left-box .email {
+  width: 80%;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(226, 226, 226);
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.left-box .message {
+  width: 80%;
+  height: 200px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(226, 226, 226);
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.left-box .submit {
+  width: 80%;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #846add;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border: none;
+  transition: background-color 0.4s;
+}
+.left-box .submit:hover {
+  background-color: #333;
+}/*# sourceMappingURL=style.css.map */
